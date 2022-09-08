@@ -27,7 +27,7 @@
 //console.log(headerTitle.innerText)
 //headerTitle.innerHTML='<h3>Hello</h3>';
 //header.style.borderBottom='solid 3px #000';
-var x=document.getElementById("bold");
+/*var x=document.getElementById("bold");
 x.style.color="green";
 
 //get eements by class name
@@ -37,7 +37,8 @@ console.log(items)
 console.log(items[1])
 items[1].textContent='hello2';
 items[1].style.fontWeight='bold';
-//items[1].style.backgroundColor='yellow';
+items[1].style.backgroundColor='yellow';
+*/
 
 //items.style.background='grey'; //this do not work
 // because we have to go through loop to doing this
@@ -46,18 +47,26 @@ for(var i=0;i<items.length;i++){
     items[i].style.backgroundColor='grey';
 }
 */
-for(var i=0;i<items.length;i++){
+/*for(var i=0;i<items.length;i++){
     items[i].style.fontWeight='bold';
 }
 items[3].style.backgroundColor='green';
+*/
 
 
 //get elements by tag name
+var li=document.getElementsByTagName('list-group-item');
+console.log(li)
+console.log(li)
+console.log(li[1])
+li[1].textContent='hello2';
+li[1].style.fontWeight='bold';
+li[1].style.backgroundColor='yellow';
 
-
-
-
-
+for(var i=0;i<li.length;i++){
+    li[i].style.fontWeight='bold';
+}
+li[3].style.backgroundColor='green';
 
 
 
